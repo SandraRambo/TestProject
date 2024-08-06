@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca2614d-4600-4a46-a102-04e12e04492d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Test Weather Project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apiTest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="4ca2614d-4600-4a46-a102-04e12e04492d" name="Changes" comment="i love you" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +36,8 @@
     "Python.Test.executor": "Run",
     "Python.apiTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/sandr/PycharmProjects/Test Weather Project"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -125,6 +115,19 @@
       <option name="presentableId" value="Default" />
       <updated>1717094297903</updated>
     </task>
+    <task id="LOCAL-00001" summary="i love you">
+      <option name="closed" value="true" />
+      <created>1722955575056</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722955575056</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="i love you" />
+    <option name="LAST_COMMIT_MESSAGE" value="i love you" />
   </component>
 </project>
