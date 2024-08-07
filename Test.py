@@ -17,7 +17,7 @@ def get_weather():
     print(response.status_code)
 
     # Latitude and longitude of Norse Hus
-    latitude = 47.7613
+    latitude = 48.0694
     longitude = -90.3434
 
     # NWS API endpoint
@@ -54,16 +54,34 @@ def get_weather():
     # print(f"Weather Description: {current_observation['textDescription']}")
 
     temp_output = current_observation['temperature']['value']
-    humidity_output = round(current_observation['relativeHumidity']['value'], 0)
+    humidity_output = current_observation['relativeHumidity']['value']
     wind_speed_current = current_observation['windSpeed']['value']
     wind_dir_current = current_observation['windDirection']['value']
     description_current = current_observation['textDescription']
 
+    # Format Output
+    if temp_output:
+        temp = temp_output * 9 / 5 + 32
+    else:
+        temp = "-"
+
+    if humidity_output:
+        humidity = round(humidity_output, 0)
+    else:
+        humidity = "-"
+
+    if wind_dir_current:
+        dirs = ['N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE', 'S', 'SSW', 'SW', 'WSW', 'W', 'WNW', 'NW', 'NNW']
+        ix = round(wind_dir_current / (360. / len(dirs)))
+        wind_direction = dirs[ix % len(dirs)]
+    else:
+        wind_direction = "-"
+
     return render_template("index.html",
-                           temp=temp_output,
-                           humidity=humidity_output,
+                           temp=temp,
+                           humidity=humidity,
                            windSpeed=wind_speed_current,
-                           windDir=wind_dir_current,
+                           windDir=wind_direction,
                            description=description_current)
 
 

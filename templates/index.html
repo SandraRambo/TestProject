@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../static/assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../static/assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 	</head>
 	<body class="is-preload">
 
@@ -45,8 +46,11 @@
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">Current Conditions</h2>
-								<span class="image main"><img src="../static/images/pic01.jpg" alt="" /></span>
-								<p>Temp: {{ temp }} C</p>
+<!--								This doesn't seem to be working right now. Only the sun icon is displaying..-->
+								<button onclick="change('weatherIcon','{{ description }}')">Update Weather</button>
+								<i id="weatherIcon" onclick="change('weatherIcon','{{ description }}')" class="bi bi-cloud-sun"></i>
+								<i class="bi bi-cloud-drizzle-fill"></i>
+								<p>Temp: {{ temp }} F</p>
 								<p>Humidity: {{ humidity }}%</p>
 								<p>Wind Speed: {{ windSpeed }} m/s</p>
 								<p>Wind Direction: {{ windDir }}</p>
@@ -359,6 +363,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="../static/assets/js/breakpoints.min.js"></script>
 			<script src="../static/assets/js/util.js"></script>
 			<script src="../static/assets/js/main.js"></script>
+			<script src="../static/assets/js/currentConditionIcon.js"></script>
 
 	</body>
 </html>

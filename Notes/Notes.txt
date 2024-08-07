@@ -1,0 +1,3 @@
+Icons:
+https://icons.getbootstrap.com/?q=weather
+<i class="bi bi-brightness-alt-high"></i>
